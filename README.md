@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @programatthieu
+- 👀 I’m interested in HTML, CSS, SASS, JS, PHP, SQL and Python. I'm also an engineer since 10 years in GIS.
+- 🌱 I’m currently learning Bulma framework
+- 💞️ I’m looking to collaborate on back-end projets
+- 📫 How to reach me: http://twitter.com/programatthieu
