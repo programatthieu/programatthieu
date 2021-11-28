@@ -1,2 +1,2 @@
-👋 Hi, I’m @programatthieu. This project is my portfolio.
+👋 Hi, I’m @programatthieu
 
