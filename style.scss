@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Import de minreset.css pour normaliser l'affichage entre navigateurs */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+/* Ajout de  polices Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Merriweather:wght@300&display=swap');
+
+// Colors
+$highlight: #fe6f61;
+$dark: #262a33;
+$darker: #1a1d24;
+$border: #363a46;
+$text: darkgray;
+
+html {
+  background: $dark;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2em;
+  color: $text;
+}
+// Agencement des containers de la sidebar
+.sidebar {
+  background: $darker;
+  width: 12rem;
+  height: 100%;
+  position: fixed;
+  padding: 1rem;
+  border-right: solid;
+  border-right-width: 1px;
+  border-color: $border;
+}
+ .presentation {
+   align-self: auto;
+   height: 30%;
+   width: 100%;
+ }
+ .sidebar-list {
+  height: 20%;
+  list-style: none;
+ }
+ .footer {
+  height: 10%;
+  width: 50%;
+ }
+// Disposition des containers avec Flexbox
+.flex-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ align-content: stretch;
+ align-items: center;
+}
+.flex-direction-column {
+ flex-direction: column;
+}
+.flex-direction-row {
+ flex-direction: row;
+}
+.flex-item {
+  align-self: auto;
+}
+// Links color
+a {
+  font-family: 'Merriweather', serif;
+  color: $highlight;
+  text-decoration: none;
+  font-style: bold;
+}
+
+.main {
+ position: absolute;
+ left: 12rem;
+ & h1 {
+  font-family: 'Merriweather', serif;
+ }
+}
+.slide {
+  height: 100vh;
+}
+#slide-skills {
+ background: #fe6f61;
+ color: #1a1d24; 
+}
+#slide-projects {
+ background:#1a1d24;
+ color: #fe6f61;
+}
+
+
+
+ 

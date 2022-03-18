@@ -1,13 +1,10 @@
-@charset "UTF-8";
 /* Import de minreset.css pour normaliser l'affichage entre navigateurs */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 /* Ajout de  polices Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Merriweather:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Merriweather:wght@300&display=swap");
 html {
-  height: 100%;
   background: #262a33;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 1.2em;
   color: darkgray;
 }
@@ -21,82 +18,71 @@ html {
   border-right: solid;
   border-right-width: 1px;
   border-color: #363a46;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: stretch;
-  align-items: center;
 }
 
 .presentation {
   align-self: auto;
   height: 30%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: stretch;
-  align-items: center;
-}
-.presentation-title {
-  align-self: auto;
-}
-.presentation-avatar {
-  align-self: auto;
-}
-.presentation-subtitle {
-  align-self: auto;
 }
 
 .sidebar-list {
   height: 20%;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
-.sidebar-list-skills{
-  align-self: auto;
-}
-.sidebar-list-projects{
-  align-self: auto;
-}
-.sidebar-list-school{
-  align-self: auto;
 }
 
 .footer {
-  align-self: auto;
   height: 10%;
   width: 50%;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  align-content: stretch;
   align-items: center;
 }
-.footer-git {
-  align-self: auto;
-}
-.footer-mail {
-  align-self: auto;
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-item {
+  align-self: auto;
+}
 
 a {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   color: #fe6f61;
   text-decoration: none;
   font-style: bold;
 }
 
-.main{
-  margin-left: 12rem;
-  padding: 2rem;
+.main {
+  position: absolute;
+  left: 12rem;
 }
+.main h1 {
+  font-family: "Merriweather", serif;
+}
+
+.slide {
+  height: 100vh;
+}
+
+#slide-skills {
+  background: #fe6f61;
+  color: #1a1d24;
+}
+
+#slide-projects {
+  background: #1a1d24;
+  color: #fe6f61;
+}
+
+/*# sourceMappingURL=style.css.map */
