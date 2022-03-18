@@ -1,47 +1,99 @@
 @charset "UTF-8";
 /* Import de minreset.css pour normaliser l'affichage entre navigateurs */
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-/* Ajout de la police Google Font: https://fonts.google.com/specimen/Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* Ajout de  polices Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Merriweather:wght@300&display=swap');
 
 html {
   height: 100%;
-  background: #2f263c;
-  font-family: 'Montserrat', sans-serif;
+  background: #262a33;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2em;
   color: darkgray;
 }
 
 .sidebar {
-  background: #222325;
-  height: 100%;
+  background: #1a1d24;
   width: 12rem;
+  height: 100%;
   position: fixed;
   padding: 1rem;
-
-}
-.sidebar a{
-  text-decoration: none;
-  color: darkgray;
-}
-
-.sidebar-menu {
-  height: 100%;
+  border-right: solid;
+  border-right-width: 1px;
+  border-color: #363a46;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: chartreuse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
 }
 
-.sidebar-start {
-  background: crimson;
+.presentation {
+  align-self: auto;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+}
+.presentation-title {
+  align-self: auto;
+}
+.presentation-avatar {
+  align-self: auto;
+}
+.presentation-subtitle {
+  align-self: auto;
 }
 
-.sidebar-center {
-  background: darkblue;
+.sidebar-list {
+  height: 20%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.sidebar-list-skills{
+  align-self: auto;
+}
+.sidebar-list-projects{
+  align-self: auto;
+}
+.sidebar-list-school{
+  align-self: auto;
 }
 
-.sidebar-end {
-  background: darkgreen;
+.footer {
+  align-self: auto;
+  height: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.footer-git {
+  align-self: auto;
+}
+.footer-mail {
+  align-self: auto;
+}
+
+
+a {
+  font-family: 'Merriweather', serif;
+  color: #fe6f61;
+  text-decoration: none;
+  font-style: bold;
 }
 
 .main{
