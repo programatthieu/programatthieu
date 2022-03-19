@@ -10,13 +10,15 @@ $dark: #262a33;
 $darker: #1a1d24;
 $border: #363a46;
 $text: darkgray;
-
+$dark-lighter: #565F73;
+// Default colors
 html {
   background: $dark;
   font-family: 'Fredoka', sans-serif;
   font-size: 1.2em;
   color: $text;
 }
+
 // Agencement des containers de la sidebar
 .sidebar {
   background: $darker;
@@ -83,6 +85,9 @@ a {
 #slide-projects {
  background:#1a1d24;
  color: #fe6f61;
+}
+#slide-examples {
+
 }
 
 
