@@ -11,15 +11,16 @@ $darker: #1a1d24;
 $border: #363a46;
 $text: darkgray;
 $dark-lighter: #565F73;
+
 // Default colors
+
 html {
-  background: $dark;
   font-family: 'Fredoka', sans-serif;
   font-size: 1.2em;
   color: $text;
 }
 
-// Agencement des containers de la sidebar
+// Agencement des containers de l'aside
 .sidebar {
   background: $darker;
   width: 12rem;
@@ -29,6 +30,12 @@ html {
   border-right: solid;
   border-right-width: 1px;
   border-color: $border;
+  & h1 {
+    font-size: 1.2em;
+  }
+  & h2 {
+    font-size: 0.8em;
+  }
 }
  .presentation {
    align-self: auto;
@@ -62,34 +69,64 @@ html {
 }
 // Links color
 a {
-  font-family: 'Merriweather', serif;
   color: $highlight;
   text-decoration: none;
   font-style: bold;
+  font-family: 'Merriweather', serif;
+
 }
 
 .main {
- position: absolute;
- left: 12rem;
- & h1 {
+  background: linear-gradient(0deg, rgba(254,111,97,1) 0%, rgba(38,42,51,1) 100%);
+  position: absolute;
+  left: 12rem;
+  & h1 {
   font-family: 'Merriweather', serif;
- }
+  }
+  & a {
+    font-family: 'Fredoka', sans-serif;
+  }
 }
+
 .slide {
   height: 100vh;
 }
+
+.div-grid {
+  background: $darker;
+  border-radius: 15px;
+  border: 1px solid $border;
+  padding: 2rem;
+  & h1 {
+    padding: 0.1rem;
+    font-size: 1.2rem;
+  }
+  & li {
+    margin: 1rem;
+  }
+}
+
 #slide-skills {
- background: #fe6f61;
- color: #1a1d24; 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0.2fr repeat(2, 1fr);
+  grid-template-rows: 1fr 1.2fr 0.2fr 1.2fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  &
+  .div1 { grid-area: 2 / 2 / 3 / 3; }
+  .div2 { grid-area: 4 / 2 / 6 / 3; }
+  .div3 { grid-area: 2 / 4 / 5 / 5; }
 }
-#slide-projects {
- background:#1a1d24;
- color: #fe6f61;
+
+#slide-projects, #slide-school {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  & {
+    .div1 { grid-area: 2 / 2 / 3 / 3; }
+  }
 }
-#slide-examples {
 
-}
-
-
-
- 

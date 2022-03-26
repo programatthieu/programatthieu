@@ -3,7 +3,6 @@
 /* Ajout de  polices Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Merriweather:wght@300&display=swap");
 html {
-  background: #262a33;
   font-family: "Fredoka", sans-serif;
   font-size: 1.2em;
   color: darkgray;
@@ -18,6 +17,12 @@ html {
   border-right: solid;
   border-right-width: 1px;
   border-color: #363a46;
+}
+.sidebar h1 {
+  font-size: 1.2em;
+}
+.sidebar h2 {
+  font-size: 0.8em;
 }
 
 .presentation {
@@ -57,32 +62,69 @@ html {
 }
 
 a {
-  font-family: "Merriweather", serif;
   color: #fe6f61;
   text-decoration: none;
   font-style: bold;
+  font-family: "Merriweather", serif;
 }
 
 .main {
+  background: linear-gradient(0deg, #fe6f61 0%, #262a33 100%);
   position: absolute;
   left: 12rem;
 }
 .main h1 {
   font-family: "Merriweather", serif;
 }
+.main a {
+  font-family: "Fredoka", sans-serif;
+}
 
 .slide {
   height: 100vh;
 }
 
-#slide-skills {
-  background: #fe6f61;
-  color: #1a1d24;
+.div-grid {
+  background: #1a1d24;
+  border-radius: 15px;
+  border: 1px solid #363a46;
+  padding: 2rem;
+}
+.div-grid h1 {
+  padding: 0.1rem;
+  font-size: 1.2rem;
+}
+.div-grid li {
+  margin: 1rem;
 }
 
-#slide-projects {
-  background: #1a1d24;
-  color: #fe6f61;
+#slide-skills {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0.2fr repeat(2, 1fr);
+  grid-template-rows: 1fr 1.2fr 0.2fr 1.2fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#slide-skills .div1 {
+  grid-area: 2/2/3/3;
+}
+#slide-skills .div2 {
+  grid-area: 4/2/6/3;
+}
+#slide-skills .div3 {
+  grid-area: 2/4/5/5;
+}
+
+#slide-projects, #slide-school {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#slide-projects .div1, #slide-school .div1 {
+  grid-area: 2/2/3/3;
 }
 
 /*# sourceMappingURL=style.css.map */
